@@ -54,6 +54,7 @@ export default function MainLayout({ children, params: { locale } }: Props) {
               location={{
                 pathname,
               }}
+              headerRender={()=><>hahhahh</>}
               // avatarProps={{
               //   src: 'https://randomuser.me/api/portraits/lego/2.jpg',
               //   title: 'tomoon',
@@ -74,12 +75,13 @@ export default function MainLayout({ children, params: { locale } }: Props) {
               itemRender={(route: any) => {
                 return <Navigation name={route.title}></Navigation>;
               }}
-              actionsRender={(props) => {
-                if (props.isMobile) return [];
-                return [
-                  <ChangeLanguage key="ChangeLanguage"></ChangeLanguage>,
-                ];
-              }}
+              // changge language
+              // actionsRender={(props) => {
+              //   if (props.isMobile) return [];
+              //   return [
+              //     <ChangeLanguage key="ChangeLanguage"></ChangeLanguage>,
+              //   ];
+              // }}
               menuDataRender={(menuData) => {
                 return menuData.map((item: any) => {
                   return item.access && item;

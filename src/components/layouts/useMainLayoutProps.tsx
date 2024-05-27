@@ -42,28 +42,33 @@ const useDefaultLayoutProps = () => {
         //   icon: <CrownFilled />,
         //   access: canAccessSystem,
         // },
-        // {
-        //   name: 'demo',
-        //   path: staticRouter.list,
-        //   access: canAccessSystem,
-        //   routes: [
-        //     {
-        //       path: staticRouter.ahookTable,
-        //       name: 'ahookList',
-        //       icon: <CrownFilled />,
-        //     },
-        //     {
-        //       path: staticRouter.proTable,
-        //       name: 'proList',
-        //       icon: <CrownFilled />,
-        //     },
-        //     {
-        //       path: staticRouter.proForm,
-        //       name: 'proForm',
-        //       icon: <CrownFilled />,
-        //     },
-        //   ],
-        // },
+        {
+          name: 'demo',
+          path: staticRouter.list,
+          access: canAccessSystem,
+          routes: [
+            {
+              path: staticRouter.withdrawOkx,
+              name: 'withdrawOkx',
+              icon: <CrownFilled />,
+            },
+            // {
+            //   path: staticRouter.ahookTable,
+            //   name: 'ahookList',
+            //   icon: <CrownFilled />,
+            // },
+            // {
+            //   path: staticRouter.proTable,
+            //   name: 'proList',
+            //   icon: <CrownFilled />,
+            // },
+            // {
+            //   path: staticRouter.proForm,
+            //   name: 'proForm',
+            //   icon: <CrownFilled />,
+            // },
+          ],
+        },
       ],
     },
   };

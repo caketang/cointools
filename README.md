@@ -43,3 +43,4 @@ https://juejin.cn/post/7327107254603268123
 ## svg 图标
 
 next/image 组件直接支持 svg 直接引用不用二次封装
+1
